@@ -3,12 +3,12 @@ import 'package:devops_demo/database/dao/services.dart';
 import 'package:devops_demo/resources/texts/strings.dart';
 import 'package:devops_demo/ui/views/detail_page.dart';
 
-class Family extends StatefulWidget {
+class Ice extends StatefulWidget {
   @override
-  FamilyState createState() => FamilyState();
+  IceState createState() => IceState();
 }
 
-class FamilyState extends State<Family> {
+class IceState extends State<Ice> {
   late List services;
 
   @override
@@ -43,7 +43,7 @@ class FamilyState extends State<Family> {
                     child: LinearProgressIndicator(
                         backgroundColor: Color.fromRGBO(209, 224, 224, 0.2),
                         value: services.indicatorValue,
-                        valueColor: AlwaysStoppedAnimation(Colors.blue)),
+                        valueColor: AlwaysStoppedAnimation(Colors.green)),
                   )),
             ],
           ),
@@ -87,20 +87,21 @@ class FamilyState extends State<Family> {
 
 List getServices() {
   return [
+
     Services(
-      title: Strings.TITLE_MMM_MMM_REGISTRATION,
-      indicatorValue: 0.25,
+      title: Strings.TITLE_DPSR_CONE_ICE,
+      indicatorValue: 0.40,
     ),
     Services(
-      title: Strings.TITLE_MMM_VARAN_VADHU_LIST,
-      indicatorValue: 0.50,
+      title: Strings.TITLE_DPSR_CUP_ICE,
+      indicatorValue: 0.60,
     ),
     Services(
-      title: Strings.TITLE_MMM_VIEW_EDIT_DELETE_PROFILE,
-      indicatorValue: 0.75,
+      title: Strings.TITLE_DPSR_STICK_ICE,
+      indicatorValue: 0.80,
     ),
     Services(
-      title: Strings.TITLE_MMM_LATEST_NEWS,
+      title: Strings.TITLE_DPSR_Ball_ICE,
       indicatorValue: 1.0,
     ),
   ];
